@@ -7,6 +7,7 @@ import { AuthModule } from './auth/auth.module.js';
 import { PostsModule } from './posts/posts.module.js';
 import { ConfigModule } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
+import { CloudinaryModule } from './cloudinary/cloudinary.module.js';
 
 export const { ObserveModule, ObserveInstrument } = createObserveModule();
 
@@ -26,6 +27,7 @@ export const { ObserveModule, ObserveInstrument } = createObserveModule();
     UsersModule,
     AuthModule,
     PostsModule,
+    CloudinaryModule,
   ],
   controllers: [AppController],
   providers: [AppService],
